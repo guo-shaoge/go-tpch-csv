@@ -1,0 +1,19 @@
+CREATE TABLE `lineitem` (
+  `L_ORDERKEY` bigint(20) NOT NULL,
+  `L_PARTKEY` bigint(20) NOT NULL,
+  `L_SUPPKEY` bigint(20) NOT NULL,
+  `L_LINENUMBER` bigint(20) NOT NULL,
+  `L_QUANTITY` decimal(15,2) NOT NULL,
+  `L_EXTENDEDPRICE` decimal(15,2) NOT NULL,
+  `L_DISCOUNT` decimal(15,2) NOT NULL,
+  `L_TAX` decimal(15,2) NOT NULL,
+  `L_RETURNFLAG` char(1) NOT NULL,
+  `L_LINESTATUS` char(1) NOT NULL,
+  `L_SHIPDATE` date NOT NULL,
+  `L_COMMITDATE` date NOT NULL,
+  `L_RECEIPTDATE` date NOT NULL,
+  `L_SHIPINSTRUCT` char(25) NOT NULL,
+  `L_SHIPMODE` char(10) NOT NULL,
+  `L_COMMENT` varchar(44) NOT NULL,
+  PRIMARY KEY (`L_ORDERKEY`,`L_LINENUMBER`) /*T![clustered_index] CLUSTERED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

@@ -1,0 +1,6 @@
+CREATE TABLE `region` (
+  `R_REGIONKEY` bigint(20) NOT NULL,
+  `R_NAME` char(25) NOT NULL,
+  `R_COMMENT` varchar(152) DEFAULT NULL,
+  PRIMARY KEY (`R_REGIONKEY`) /*T![clustered_index] CLUSTERED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

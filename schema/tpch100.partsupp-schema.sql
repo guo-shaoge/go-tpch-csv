@@ -1,0 +1,8 @@
+CREATE TABLE `partsupp` (
+  `PS_PARTKEY` bigint(20) NOT NULL,
+  `PS_SUPPKEY` bigint(20) NOT NULL,
+  `PS_AVAILQTY` bigint(20) NOT NULL,
+  `PS_SUPPLYCOST` decimal(15,2) NOT NULL,
+  `PS_COMMENT` varchar(199) NOT NULL,
+  PRIMARY KEY (`PS_PARTKEY`,`PS_SUPPKEY`) /*T![clustered_index] CLUSTERED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

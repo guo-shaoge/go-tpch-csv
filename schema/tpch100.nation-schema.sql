@@ -1,0 +1,7 @@
+CREATE TABLE `nation` (
+  `N_NATIONKEY` bigint(20) NOT NULL,
+  `N_NAME` char(25) NOT NULL,
+  `N_REGIONKEY` bigint(20) NOT NULL,
+  `N_COMMENT` varchar(152) DEFAULT NULL,
+  PRIMARY KEY (`N_NATIONKEY`) /*T![clustered_index] CLUSTERED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;

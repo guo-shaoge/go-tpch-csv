@@ -1,0 +1,12 @@
+CREATE TABLE `orders` (
+  `O_ORDERKEY` bigint(20) NOT NULL,
+  `O_CUSTKEY` bigint(20) NOT NULL,
+  `O_ORDERSTATUS` char(1) NOT NULL,
+  `O_TOTALPRICE` decimal(15,2) NOT NULL,
+  `O_ORDERDATE` date NOT NULL,
+  `O_ORDERPRIORITY` char(15) NOT NULL,
+  `O_CLERK` char(15) NOT NULL,
+  `O_SHIPPRIORITY` bigint(20) NOT NULL,
+  `O_COMMENT` varchar(79) NOT NULL,
+  PRIMARY KEY (`O_ORDERKEY`) /*T![clustered_index] CLUSTERED */
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
